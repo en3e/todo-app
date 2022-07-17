@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js" async defer></script>
+  </head>
+  <body class="">
+    <div
+      class="container m-auto w-[350px] md:w-[550px] mt-12 border-2 rounded-lg min-h-[50%] p-4"
+    >
+      <h1 class="text-4xl font-bold text-center p-4 mt-2">TODO App</h1>
+      <div class="m-auto w-2/3 mt-2">
+        <div
+          class="rounded border-4 bg-red-600 border-red-600 w-full mb-4 hidden"
+          id="error"
+        >
+          <span class="block text-white p-3 text-center"
+            >Please enter a title and description</span
+          >
+        </div>
+        <label
+          for="task-title"
+          class="block m-auto text-left border-b-[2.5px] pb-2 border-gray-900 text-sm font-medium"
+          >TASK TITLE</label
+        >
+        <input
+          type="text"
+          id="task-title"
+          class="border-2 outline-none w-full rounded mt-3 mb-8 h-10"
+        />
+        <label
+          for="task-description"
+          class="block m-auto text-left border-b-[2.5px] pb-2 border-gray-900 text-sm font-medium"
+          >TASK DESCRIPTION</label
+        >
+        <input
+          type="text"
+          id="task-description"
+          class="border-2 outline-none w-full rounded mt-3 h-10"
+        />
+        <button
+          class="bg-gray-700 rounded h-10 w-full mt-6 text-gray-50"
+          id="add"
+        >
+          Add
+        </button>
+        <p
+          class="mt-8 block m-auto text-left border-b-[2.5px] pb-2 border-gray-900 text-sm font-medium"
+        >
+          TODO
+        </p>
+        <ul id="todo-list" class="mt-4 mb-8"></ul>
+      </div>
+    </div>
+  </body>
+</html>
